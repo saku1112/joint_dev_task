@@ -2,10 +2,12 @@
 # 回答の出力を確認される際は，「ruby main.rb」をターミナルから実行して下さい。
 
 def q1
-  names = ["田中", "佐藤", "佐々木", "高橋","斎藤"]
+  names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
+names.push("齋藤")
 puts names[4]
+
 end
 
 def q2
@@ -13,8 +15,7 @@ def q2
   array2 = ["bird", "bat", "tiger"]
 
   # 以下に回答を記載
-  array1.push(array2)
-  array1.flatten!
+  array1 = array1 + array2
   p array1
 
 end
