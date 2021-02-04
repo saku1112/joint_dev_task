@@ -52,9 +52,9 @@ def q6
   numbers1 = [1, 2, 3, 4, 5]
 
   # 以下に回答を記載
-  numbers2 = numbers1.map do |a|
-    a * 10
-  end
+  numbers2 = numbers1.map { |a| a * 10 }
+
+  
   p numbers2
 
 end
@@ -63,6 +63,7 @@ def q7
   array = ["1", "2", "3", "4", "5"]
 
   # 以下に回答を記載
+  array.map!(&:to_i)
 
   # 以下は変更しないで下さい
   p array
@@ -72,6 +73,8 @@ def q8
   programming_languages = %w(ruby php python javascript)
 
   # 以下に回答を記載
+
+　
 
   # 以下は変更しないで下さい
   p programming_languages
