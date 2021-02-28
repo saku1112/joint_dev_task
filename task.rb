@@ -200,7 +200,7 @@ class UserQ18
   end
   def introduce
     case
-    when @age > 20
+    when @age >= 20
       "はいさいまいど〜,#{@name}です！！！"
     else
       "こんにちは,#{@name}と申します。宜しくお願いいたします。"
