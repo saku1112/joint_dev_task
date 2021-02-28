@@ -200,7 +200,7 @@ class UserQ18
   end
   def introduce
     case
-    when @age == 10
+    when @age > 20
       "はいさいまいど〜,#{@name}です！！！"
     else
       "こんにちは,#{@name}と申します。宜しくお願いいたします。"
@@ -219,13 +219,11 @@ end
 
 class Item
   # 以下を修正して下さい
-
+  attr_accessor :name
   def initialize(name:)
     @name = name
   end
-  def name
-    @name
-  end
+
 end
 
 def q19
